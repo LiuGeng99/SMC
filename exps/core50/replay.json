@@ -1,0 +1,22 @@
+{
+    "prefix": "reproduce",
+    "model_name": "replay",
+    "convnet_type": "resnet18",
+    "dataset": "core50",
+    "fixed_memory": true,
+    "shuffle": true,
+    "seed": 1999,
+    "memory_size": 500,
+    "memory_per_class": 10,
+    "device": ["0"],
+    "random_seeds": [2,3],
+    "task_ncls": [10, 10,10,10,10],
+    "epochs":    [100,70,70,70,70],
+    "train_tasks": [0,1,2,3,4],
+    "load_tasks": [],
+    "lr": 1e-1,
+    "lr_min": 1e-4,
+    "weight_decay": 2e-4,
+    "batch_size": 128,
+    "save_checkpoints": true
+}

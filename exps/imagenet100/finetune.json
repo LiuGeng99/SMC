@@ -1,0 +1,22 @@
+{
+    "prefix": "reproduce",
+    "model_name": "finetune",
+    "convnet_type": "resnet18",
+    "dataset": "imagenet100",
+    "fixed_memory": true,
+    "shuffle": true,
+    "seed": 1993,
+    "memory_size": 2000,
+    "memory_per_class": 20,
+    "device": ["0"],
+    "random_seeds": [1,2,3],
+    "task_ncls": [10, 10,10,10,10,10,10,10,10,10],
+    "epochs":    [100,70,70,70,70,70,70,70,70,70],
+    "train_tasks": [0,1,2,3,4,5,6,7,8,9],
+    "load_tasks": [],
+    "lr": 1e-1,
+    "lr_min": 1e-4,
+    "weight_decay": 2e-4,
+    "batch_size": 128,
+    "save_checkpoints": true
+}

@@ -1,0 +1,12 @@
+{
+    "architecture":"bmshj2018-factorized-relu",
+    "quality": 2,
+    "metric": "mse",
+    "latent_lr": 1e-3,
+    "decoder_lr": 1e-3,
+    "lmbda": 2e-3,
+    "epochs": 50,
+    "batch_size": 64,
+    "clip-max-norm": true,
+    "workers": 4
+}

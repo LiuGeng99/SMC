@@ -1,0 +1,19 @@
+prefix: "DINO_0"
+method: "smc"
+model: "dino"
+dataset:
+  name: "CIFAR10"
+  root: "./data"
+  augment: true
+
+data_loader:
+  batch_size: 64
+  epochs: 50
+
+optimizer:
+  type: "AdamW"       # SGD
+  lr: 5e-5
+  weight_decay: 1e-4
+
+scheduler:
+  type: "Cosine"
